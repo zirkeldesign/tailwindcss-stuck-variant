@@ -5,6 +5,9 @@
   "author": "Daniel Sturm <d.sturm@zirkeldesign.de>",
   "license": "MIT",
   "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "lint": "eslint src"
   },
