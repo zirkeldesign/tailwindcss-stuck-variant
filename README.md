@@ -1,6 +1,6 @@
 # Tailwind CSS stuck variant
 
-Adds a `stuck:` variant to Tailwind CSS to style elements and child nodes which use the `.sticky` utility. Unfortunately since there is currently no CSS selector for `:stuck` Elements, this variant relies on a JavaScript helper, which uses the `IntersectionObserver` on those elements.
+Adds a `stuck:` and `group-stuck:` variant to Tailwind CSS to style elements and child nodes which use the `.sticky` utility. Unfortunately since there is currently no CSS selector for `:stuck` Elements, this variant relies on a JavaScript helper, which uses the `IntersectionObserver` on those elements.
 
 ## Installation
 

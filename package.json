@@ -1,7 +1,7 @@
 {
   "name": "@zirkeldesign/tailwindcss-stuck-variant",
   "version": "0.1.0",
-  "description": "Adds the stuck variant to Tailwind CSS",
+  "description": "Adds a `stuck:` (and `group-stuck:`) variant to Tailwind CSS.",
   "author": "Daniel Sturm <d.sturm@zirkeldesign.de>",
   "license": "MIT",
   "main": "index.js",
@@ -19,6 +19,8 @@
   "keywords": [
     "tailwind",
     "tailwindcss",
+    "tailwindcss-plugin",
+    "tailwindcss-variant",
     "sticky",
     "stuck",
     "variants",
