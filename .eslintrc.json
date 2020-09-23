@@ -1,0 +1,15 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2018
+  },
+  "rules": {
+    "max-len": 0,
+    "quote-props": 0,
+    "require-jsdoc": 0
+  }
+}

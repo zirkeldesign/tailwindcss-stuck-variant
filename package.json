@@ -1,0 +1,41 @@
+{
+  "name": "@zirkeldesign/tailwindcss-stuck-variant",
+  "version": "0.1.0",
+  "description": "Adds the stuck variant to Tailwind CSS",
+  "author": "Daniel Sturm <d.sturm@zirkeldesign.de>",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zirkeldesign/tailwindcss-stuck-variant.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zirkeldesign/tailwindcss-stuck-variant/issues"
+  },
+  "homepage": "https://github.com/zirkeldesign/tailwindcss-stuck-variant#readme",
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "sticky",
+    "stuck",
+    "variants",
+    "plugin"
+  ],
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "husky": ">=4",
+    "lint-staged": ">=10",
+    "tailwindcss": "^1.6.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}
