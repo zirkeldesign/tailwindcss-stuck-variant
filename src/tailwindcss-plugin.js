@@ -1,12 +1,6 @@
 const plugin = require("tailwindcss/plugin");
 
 module.exports = plugin(function ({ addComponents, addVariant, e }) {
-  addComponents({
-    ".stuck-observer-helper": {
-      height: "1px",
-    },
-  });
-
   addVariant("stuck", ({ modifySelectors, separator }) => {
     modifySelectors(({ className }) => {
       return `.is-stuck.${e(`stuck${separator}${className}`)}`;
