@@ -1,6 +1,6 @@
 {
   "name": "@zirkeldesign/tailwindcss-stuck-variant",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Adds a `stuck:` (and `group-stuck:`) variant to Tailwind CSS.",
   "author": "Daniel Sturm <d.sturm@zirkeldesign.de>",
   "license": "MIT",
@@ -33,7 +33,7 @@
     "eslint": "^7.7.0",
     "husky": ">=4",
     "lint-staged": ">=10",
-    "tailwindcss": "^1.6.2"
+    "tailwindcss": "^1.6||^2.0"
   },
   "husky": {
     "hooks": {

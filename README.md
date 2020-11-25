@@ -20,6 +20,10 @@ module.exports = {
     // or with extending the default variants
     // @see https://tailwindcss.com/docs/configuring-variants#extending-default-variants
     backgroundColor: ({ after }) => after(["stuck", "group-stuck"]),
+    // or in Tailwind CSS >= v2.0
+    extend: {
+      backgroundColor: ["stuck", "group-stuck"],
+    },
   },
   plugins: [
     // Other plugins...
