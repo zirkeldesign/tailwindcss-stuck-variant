@@ -3,6 +3,8 @@ module.exports = ({
   stuckClass = "is-stuck",
   helperClass = "stuck-observer-helper",
   createHelperElement = true,
+  rootMargin = "-1px 0px 0px 0px",
+  threshold = [0, 1],
 } = {}) => {
   const observer = new IntersectionObserver(
     (entries) => {
@@ -13,8 +15,8 @@ module.exports = ({
       });
     },
     {
-      rootMargin: "-1px 0px 0px 0px",
-      threshold: [0, 1],
+      rootMargin,
+      threshold,
     }
   );
 
