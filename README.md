@@ -37,6 +37,20 @@ module.exports = {
 require("@zirkeldesign/tailwindcss-stuck-variant/src/observer")();
 ```
 
+OR
+
+```js
+// Vue 2 app.js
+import stuck from "@zirkeldesign/tailwindcss-stuck-variant/src/observer";
+
+const app = new Vue({
+  el: "#app",
+  mounted() {
+    stuck();
+  },
+});
+```
+
 ## Usage
 
 ```html
@@ -45,4 +59,28 @@ require("@zirkeldesign/tailwindcss-stuck-variant/src/observer")();
   <!-- Take the full height when its parent is stuck. -->
   <div class="h-12 group-stuck:h-8">Brand</div>
 </header>
+```
+
+## Passing custom parameters
+
+Under the hood, the following defaults are set:
+
+```js
+{
+  selector = ".sticky",
+  stuckClass = "is-stuck",
+  helperClass = "stuck-observer-helper",
+  createHelperElement = true,
+  rootMargin = "-1px 0px 0px 0px",
+}
+```
+
+These may be overridden by passing a configuration object to the initializer:
+
+```js
+import stuck from "@zirkeldesign/tailwindcss-stuck-variant/src/observer";
+
+stuck({
+  rootMargin: "-50px 0px 0px 0px",
+});
 ```
